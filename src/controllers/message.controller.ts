@@ -17,8 +17,7 @@ export const submitMessage = async (req: Request, res: Response) => {
 
 export const getMessages = async (req: Request, res: Response) => {
     try {
-        const messages = await Message.find();
-        res.status(200).json(messages);
+        res.status(200).json({ message: "dapat mi" });
     } catch (error) {
         res.status(500).json({ message: "Error fetching messages", error });
     }
