@@ -29,6 +29,7 @@ mongoose
 
 app.get("/", (req, res) => {
     res.send("Backend API is running!");
+    res.send(process.env.MONGODB_URI);
 });
 
 app.listen(port, () => {
