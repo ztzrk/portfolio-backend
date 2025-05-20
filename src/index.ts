@@ -28,7 +28,7 @@ mongoose
     .catch((err) => console.error("MongoDB connection error:", err));
 
 app.get("/", (req, res) => {
-    res.send(process.env.MONGODB_URI);
+    res.send("Backend API is running!");
 });
 
 app.listen(port, () => {
