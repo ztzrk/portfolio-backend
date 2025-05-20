@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 app.use(
     cors({
-        origin: ["portfolio-aflah-alifus-projects.vercel.app"],
+        origin: ["*"],
         methods: ["GET", "POST", "OPTIONS"],
         allowedHeaders: ["Content-Type"],
     })
